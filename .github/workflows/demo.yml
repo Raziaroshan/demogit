@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Addition
-        run: echo $((3 + 4))
+        run: echo $((3 + 4 * 2))
     
     
     
