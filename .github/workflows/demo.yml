@@ -1,0 +1,15 @@
+name : Demo-ci
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  razia:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: run a one-line script
+        run: echo hello,world!
+    
+    
+    
