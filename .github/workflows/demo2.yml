@@ -1,0 +1,16 @@
+name : commit message-razia
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    if: contains(github.event.head_commit.message, '[deploy]')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v3
+      - name: Run this script
+        run: echo "deplo this application"
+
