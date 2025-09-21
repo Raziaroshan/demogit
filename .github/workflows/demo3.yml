@@ -2,15 +2,10 @@ name: Hello World Workflow
 
 on:
   workflow_dispatch:
-    inputs:
-      name:
-        description: 'razia'
-        required: true
-        default: 'World'
 
 jobs:
-  greet:
+  Manual:
     runs-on: ubuntu-latest
     steps:
-      - name: Print hello World razia
-        run: echo "Hello ${{ github.event.inputs.name }}"
+      - name: Print Hello Razia
+        run: echo "Hello Razia"
